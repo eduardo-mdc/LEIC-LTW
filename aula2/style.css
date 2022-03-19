@@ -3,6 +3,7 @@
 
 *{
     font-family: Lora;
+    margin: 0;
 }
 
 a{
@@ -47,7 +48,7 @@ header h1{
 }
 
 div#signup{
-    margin-top: 1em;
+    margin: 0.5em;
 }
 
 div#signup a:first-child{
@@ -128,11 +129,36 @@ aside#related{
     background-color: rgb(51, 53, 59);
     color: white;
     padding: 1em;
-    margin-bottom: 1em;
-    margin-top: 1em;
 }
 
 
 section#news img{
     width: 100%;
+}
+
+article p{
+    margin: 1em;
+    text-align: justify;
+}
+
+article p::first-letter{
+    initial-letter: 2;
+}
+
+article footer{
+    background-color: #F4655F;
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+article footer a{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(51, 53, 59);
+    color: white;
+    padding: 0.5em;
 }
