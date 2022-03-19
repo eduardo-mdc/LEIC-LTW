@@ -2,7 +2,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto auto;
-    width: 70%;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -26,4 +26,8 @@ nav#menu ul{
 
 nav#menu ul li{
     flex-grow: 1;
+}
+
+html{
+    background-color: #EDEFF0;
 }

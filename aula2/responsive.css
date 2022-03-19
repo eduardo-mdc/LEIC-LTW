@@ -1,0 +1,16 @@
+@media (max-width: 60em){
+    body{
+        width: 100%;
+    }
+}
+
+@media (max-width: 30em) {
+    aside#related{
+        display: none;
+    }
+
+    section#news{
+        grid-column-end: span 2;
+    }
+    
+}
