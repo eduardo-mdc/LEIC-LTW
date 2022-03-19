@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(167, 167, 167);
+    font-family: sans-serif;
+    text-align: justify;
+}
+header{
+    background-color: rgb(68, 68, 68);
+}
+h2,h1{
+    display: inline;
+    color: white;
+}
+h2{
+    padding: 1%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.menu{
+    text-align: right;
+    width: 100%;
+    background-color: rgb(99, 99, 99);
+}
+#logo{
+    width: 10%;
+}
+article{
+    background-color: rgb(226, 226, 226);
+    width: 90%;
+    margin: auto;
+    box-shadow: 1px 1px rgb(100,100,100);
+    border-style: solid;
+    border-radius: 2px;
+    margin-top: 3vh;
+}
+footer{
+  width: 100%;
+  height: 4vh;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  text-align: center;
+}
+#footerContent{
+    margin-top: 10px;
+}
+.title{
+    color: rgb(32, 32, 32);
+    padding-top: 0.4vh;
+    padding-left: 1%;
+}
+
+.articleContent{
+    width: 90%;
+    margin: auto;
+}
+
+.articleImage{
+    width: 50%;
+    box-shadow: 1px 1px rgb(100,100,100);
+    border-style: solid;
+    border-radius: 2px;
+}
