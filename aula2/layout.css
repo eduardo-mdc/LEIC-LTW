@@ -1,33 +1,33 @@
-body{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto auto auto;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
+body {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: auto auto auto;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
 }
-header{
-    grid-column-end: span 2;
+header {
+	grid-column-end: span 2;
 }
-aside#related{
-    grid-row-end: span 2;
+aside#related {
+	grid-row-end: span 2;
 }
-footer{
-    grid-column-end: span 2;
-}
-
-header div#signup{
-    float: right;
+footer {
+	grid-column-end: span 2;
 }
 
-nav#menu ul{
-    display: flex;
+header div#signup {
+	float: right;
 }
 
-nav#menu ul li{
-    flex-grow: 1;
+nav#menu ul {
+	display: flex;
 }
 
-html{
-    background-color: #EDEFF0;
+nav#menu ul li {
+	flex-grow: 1;
+}
+
+html {
+	background-color: #edeff0;
 }

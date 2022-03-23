@@ -1,0 +1,50 @@
+section#comments h1{
+    margin: 1em;
+}
+
+section#comments article.comment p{
+    background-color: #edeff0;
+    padding: 1em;
+}
+
+article.comment span.date{
+    float: right;
+}
+
+article.comment span{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+article.comment span.user{
+    font-style: italic;
+}
+
+article.comment span.user::after{
+    content: " said:";
+}
+
+section#comments form{
+    background-color: #edeff0;
+    padding: 1em;
+    margin: 1em;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#comments form h2{
+    grid-column-end: span 2;
+}
+
+section#comments form label:nth-child(4){
+    grid-column-end: span 2;
+}
+
+section#comments form label:nth-child(4) textarea{
+    width: 80%;
+}
+
+section#comments form button{
+    grid-column-start: 2;
+}

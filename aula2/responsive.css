@@ -1,58 +1,56 @@
-@media (max-width: 60em){
-    body{
-        width: 100%;
-    }
-    article header{
-        background-color: white;
-        width: auto;
-        position: static;
-        padding-left: 1em;
-        padding-top: 0;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-    }
+@media (max-width: 60em) {
+	body {
+		width: 100%;
+	}
+	article header {
+		background-color: white;
+		width: auto;
+		position: static;
+		padding-left: 1em;
+		padding-top: 0;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
 
-    article header h1{
-        text-shadow: none;
-        font-size: 1em;
-        color: black;
-        font-weight: bold;
-    }
-    
+	article header h1 {
+		text-shadow: none;
+		font-size: 1em;
+		color: black;
+		font-weight: bold;
+	}
 }
 
 @media (max-width: 30em) {
-    aside#related{
-        display: none;
-    }
+	aside#related {
+		display: none;
+	}
 
-    section#news{
-        grid-column-end: span 2;
-    }
+	section#news {
+		grid-column-end: span 2;
+	}
 
-    nav#menu ul{
-        flex-direction: column;
-    }
+	nav#menu ul {
+		flex-direction: column;
+	}
 
-    nav#menu{
-        grid-column-end: span 2;
-    }
+	nav#menu {
+		grid-column-end: span 2;
+	}
 
-    ul li{
-        border-width: 0 0 0 0.4em;
-    }
+	ul li {
+		border-width: 0 0 0 0.4em;
+	}
 
-    ul li:hover{
-        background-color: rgb(51, 53, 59) !important;
-    }
-    
-    label.hamburger{
-        background-color: green;
-        width: 100%;
-    }
+	ul li:hover {
+		background-color: rgb(51, 53, 59) !important;
+	}
 
-    label.hamburger::after{
-        content:"\2630";
-    }
+	label.hamburger {
+		background-color: green;
+		width: 100%;
+	}
 
+	label.hamburger::after {
+		content: "\2630";
+	}
 }
