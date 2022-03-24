@@ -36,6 +36,7 @@ section#comments form{
 section#comments form h2{
     grid-column-end: span 2;
     margin-bottom: 2em;
+    font-size: 1.2em;
 }
 
 section#comments form label:nth-child(4){
@@ -46,6 +47,12 @@ section#comments form label:nth-child(4) textarea{
     height: 5em;
 }
 
+section#comments h1{
+    font-weight: bolder;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+}
 
 section#comments form button{
     grid-column-start: 2;
@@ -57,9 +64,13 @@ section#comments form button{
     border: none;
 }
 
+
+
 section#comments form button:hover{
     background-color: white;
     color: black;
+    border-style: solid;
+    border-color: grey;
 }
 
 
