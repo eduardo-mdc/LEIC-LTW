@@ -35,6 +35,7 @@ section#comments form{
 
 section#comments form h2{
     grid-column-end: span 2;
+    margin-bottom: 2em;
 }
 
 section#comments form label:nth-child(4){
@@ -42,9 +43,47 @@ section#comments form label:nth-child(4){
 }
 
 section#comments form label:nth-child(4) textarea{
-    width: 80%;
+    height: 5em;
 }
+
 
 section#comments form button{
     grid-column-start: 2;
+    height: 3em;
+    width: 50%;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    border: none;
 }
+
+section#comments form button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+section#comments form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+
+}
+
+section#comments form label:nth-child(3){
+    margin-left: 1em;
+}
+
+section#comments form label input,textarea{
+    flex-grow: 1;
+    margin-left: 1em;
+}
+
+
+section#comments form label input{
+    height: 2em;
+}
+
+
+
+
