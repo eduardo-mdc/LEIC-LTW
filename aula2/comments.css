@@ -95,6 +95,16 @@ section#comments form label input{
     height: 2em;
 }
 
+section#comments article.comment p::before{
+    content: '\201C';
+}
+
+section#comments article.comment p::first-letter{
+    font-size: 3em;
+    font-weight: bolder;
+    color: grey;
+}
+
 
 
 

@@ -1,3 +1,5 @@
+
+
 @media (max-width: 60em) {
 	body {
 		width: 100%;
@@ -39,6 +41,7 @@
 
 	ul li {
 		border-width: 0 0 0 0.4em;
+		display: none;
 	}
 
 	ul li:hover {
@@ -46,11 +49,21 @@
 	}
 
 	label.hamburger {
-		background-color: green;
-		width: 100%;
+		background-color: rgb(51, 53, 59);
+		display: block;
+		padding: 0.5em;
+		color: white;
 	}
 
-	label.hamburger::after {
+	.hamburger:before{
 		content: "\2630";
+	}
+
+	#hamburger:checked + .hamburger:before{
+		content: "\2715";
+	}
+
+	#hamburger:checked + .hamburger + ul li{
+		display: block;
 	}
 }

@@ -83,7 +83,7 @@ ul li {
 	line-height: normal;
 }
 
-ul li:hover {
+ul li:hover a{
 	color: white;
 }
 
