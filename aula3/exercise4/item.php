@@ -10,6 +10,13 @@
     <link href="responsive.css" rel="stylesheet">
     <link href="comments.css" rel="stylesheet">
     <link href="forms.css" rel="stylesheet">
+    <?php
+      $db = new PDO('sqlite:news.db');
+      $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = :id');
+      $stmt->bindParam(':id', $_GET['id']);
+      $stmt->execute();
+      $article = $stmt->fetch();      
+    ?>
   </head>
   <body>
     <header>
@@ -51,14 +58,21 @@
     <section id="news">
       <article>
         <header>
-          <h1><a href="item.php">Quisque a dapibus magna, non scelerisque</a></h1>
+          <h1>
+            <?php echo '<a href="item.php?id='.$article["id"].'">'.$article["title"].'</a>';?>
+          </h1>
         </header>
         <img src="https://picsum.photos/600/300?business" alt="">
-        <p>Etiam massa magna, condimentum eu facilisis sit amet, dictum ac purus. Curabitur semper nisl vel libero pulvinar ultricies. Proin dignissim dolor nec scelerisque bibendum. Maecenas a sem euismod, iaculis erat id, convallis arcu. Ut mollis, justo vitae suscipit imperdiet, eros dui laoreet enim, fermentum posuere felis arcu vel urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin blandit ex sit amet suscipit commodo. Duis molestie ligula eu urna tincidunt tincidunt. Mauris posuere aliquet pellentesque. Fusce molestie libero arcu, ut porta massa iaculis sit amet. Fusce varius nisl vitae fermentum fringilla. Pellentesque a cursus lectus.</p>
-          <p>Duis condimentum metus et ex tincidunt, faucibus aliquet ligula porttitor. In vitae posuere massa. Donec fermentum magna sit amet suscipit pulvinar. Cras in elit sapien. Vivamus nunc sem, finibus ac suscipit ullamcorper, hendrerit vitae urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eget tincidunt orci. Mauris congue ipsum non purus tristique, at venenatis elit pellentesque. Etiam congue euismod molestie. Mauris ex orci, lobortis a faucibus sed, sagittis eget neque.</p>
-          <p>Mauris tincidunt orci congue turpis viverra pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque rhoncus lorem eget.</p>
+        <?php
+          echo '<p>';
+            echo $article['introduction'];
+          echo '</p>'; 
+          echo '<p>';
+            echo $article['fulltext'];
+          echo '</p>'; 
+        ?>
         <section id="comments">
-          <h1>5 Comments</h1>
+          <h1><?= $article['comments']?> 5 Comments</h1>
           <article class="comment">
             <span class="user">updatespeak</span>
             <span class="date">1m</span>
